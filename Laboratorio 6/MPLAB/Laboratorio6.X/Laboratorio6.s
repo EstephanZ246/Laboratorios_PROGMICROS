@@ -48,7 +48,7 @@ REINICIAR_TMR2 MACRO
     BANKSEL PIR1 // VAMOS A BANCO 0 
     BCF PIR1,1// LIMPIAMOS BANDERA DE 
     MOVLW 0X30//48.4375 250ms
-    BCF PIR1,1 // LIMPIARMOS BANDERA TIMER2
+    MOVWF PR2
     ENDM
  
 RUTINA_BCD MACRO // CONVERSOR DE BINARIO A DECIMAL
@@ -105,9 +105,9 @@ ALMACENAR_REGISTROS: // PUSH
     MOVWF STATUS_TEMP
     
 EJECUTAR_INTERRUPCION://POP
-    ///////////////////////////////////////////////////////////////////////////
-    //			    TIMER 0
-    //////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////
+//			    TIMER 0
+//////////////////////////////////////////////////////////////////////////
     BTFSS INTCON,2// T0IF BANDERA TIMER0
     GOTO INTERRUPCION_TIMER1 // GOTO INTPORTD // SI NO ESTÁ ACTIVO LA BANDERA VAMOS A INTERRUPCION DE PORTB
     MOVLW 0X01

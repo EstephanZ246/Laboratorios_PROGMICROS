@@ -1,2 +1,2 @@
-Youtube: https://youtu.be/BVgJUwy2BaE
+Youtube: 
 Github: https://github.com/EstephanZ246/Laboratorios_PROGMICROS
