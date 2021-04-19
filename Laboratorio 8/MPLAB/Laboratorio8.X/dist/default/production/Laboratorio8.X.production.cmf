@@ -1,0 +1,458 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$dist/default/production\Laboratorio8.X.production.o
+cinit CODE 0 11 11 8 2
+text1 CODE 0 245 245 31 2
+text2 CODE 0 201 201 44 2
+text3 CODE 0 1AC 1AC 55 2
+text4 CODE 0 F8 F8 5B 2
+text5 CODE 0 8F 8F 69 2
+text6 CODE 0 153 153 59 2
+nvCOMMON COMMON 1 75 75 4 1
+nvBANK0 BANK0 1 30 30 1 1
+maintext CODE 0 19 19 76 2
+cstackCOMMON COMMON 1 70 70 5 1
+cstackBANK0 BANK0 1 20 20 10 1
+intentry CODE 0 4 4 A 2
+bssBANK0 BANK0 1 31 31 1 1
+bssCOMMON COMMON 1 79 79 1 1
+config CONFIG 4 2007 2007 2 2
+$C:\Users\Z9\AppData\Local\Temp\s4ns.o
+reset_vec CODE 0 0 0 3 2
+end_init CODE 0 E E 3 2
+config CONFIG 4 2007 2007 2 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 32-6F 1
+RAM A0-EF 1
+RAM 110-16F 1
+RAM 190-1EF 1
+BANK0 32-6F 1
+BANK1 A0-EF 1
+BANK2 110-16F 1
+BANK3 190-1EF 1
+CONST 3-3 2
+CONST 276-1FFF 2
+ENTRY 3-3 2
+ENTRY 276-1FFF 2
+IDLOC 2000-2003 2
+STACK 110-16F 1
+CODE 3-3 2
+CODE 276-1FFF 2
+SFR0 0-1F 1
+SFR1 80-9F 1
+SFR2 100-10F 1
+SFR3 180-18F 1
+COMMON 7A-7D 1
+EEDATA 2100-21FF 2
+STRCODE 3-3 2
+STRCODE 276-1FFF 2
+STRING 3-3 2
+STRING 276-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\Laboratorio8.X.production.o
+11 cinit CODE >501:C:\Users\Z9\AppData\Local\Temp\s4ns.s
+11 cinit CODE >504:C:\Users\Z9\AppData\Local\Temp\s4ns.s
+11 cinit CODE >521:C:\Users\Z9\AppData\Local\Temp\s4ns.s
+12 cinit CODE >524:C:\Users\Z9\AppData\Local\Temp\s4ns.s
+13 cinit CODE >525:C:\Users\Z9\AppData\Local\Temp\s4ns.s
+14 cinit CODE >526:C:\Users\Z9\AppData\Local\Temp\s4ns.s
+15 cinit CODE >532:C:\Users\Z9\AppData\Local\Temp\s4ns.s
+15 cinit CODE >534:C:\Users\Z9\AppData\Local\Temp\s4ns.s
+16 cinit CODE >535:C:\Users\Z9\AppData\Local\Temp\s4ns.s
+4 intentry CODE >47:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+153 text6 CODE >47:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+153 text6 CODE >50:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+15A text6 CODE >53:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+15E text6 CODE >54:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+162 text6 CODE >55:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+163 text6 CODE >57:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+167 text6 CODE >58:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+169 text6 CODE >59:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+16A text6 CODE >60:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+17A text6 CODE >61:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+17B text6 CODE >62:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+17B text6 CODE >63:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+180 text6 CODE >65:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+185 text6 CODE >66:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+18A text6 CODE >67:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+18D text6 CODE >68:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+1A0 text6 CODE >69:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+1A2 text6 CODE >70:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+1A3 text6 CODE >72:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+8F text5 CODE >5:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+8F text5 CODE >13:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+92 text5 CODE >14:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+96 text5 CODE >15:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+9B text5 CODE >16:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+9D text5 CODE >18:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+A1 text5 CODE >19:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+A6 text5 CODE >20:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+AA text5 CODE >22:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+AC text5 CODE >23:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+B2 text5 CODE >24:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+B4 text5 CODE >25:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+B5 text5 CODE >26:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+BC text5 CODE >27:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+C0 text5 CODE >25:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+C4 text5 CODE >30:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+CB text5 CODE >31:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+D5 text5 CODE >32:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+DB text5 CODE >33:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+DC text5 CODE >35:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+E3 text5 CODE >36:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+E9 text5 CODE >38:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+EE text5 CODE >39:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+F3 text5 CODE >40:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+F7 text5 CODE >41:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+F8 text4 CODE >5:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
+F8 text4 CODE >12:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
+FB text4 CODE >13:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
+FF text4 CODE >14:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
+104 text4 CODE >15:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
+106 text4 CODE >17:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
+10A text4 CODE >18:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
+10F text4 CODE >19:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
+115 text4 CODE >20:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
+117 text4 CODE >21:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
+118 text4 CODE >22:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
+11F text4 CODE >23:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
+123 text4 CODE >21:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
+127 text4 CODE >26:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
+131 text4 CODE >27:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
+137 text4 CODE >28:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
+13E text4 CODE >29:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
+144 text4 CODE >31:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
+149 text4 CODE >32:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
+14E text4 CODE >33:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
+152 text4 CODE >34:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
+1AC text3 CODE >163:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+1AC text3 CODE >165:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+1C4 text3 CODE >166:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+1DA text3 CODE >167:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+1ED text3 CODE >168:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+200 text3 CODE >170:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+201 text2 CODE >172:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+201 text2 CODE >173:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+202 text2 CODE >174:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+204 text2 CODE >175:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+205 text2 CODE >176:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+207 text2 CODE >177:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+208 text2 CODE >178:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+20A text2 CODE >179:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+20B text2 CODE >180:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+20D text2 CODE >181:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+20E text2 CODE >182:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+210 text2 CODE >183:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+211 text2 CODE >184:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+213 text2 CODE >185:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+214 text2 CODE >186:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+216 text2 CODE >187:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+217 text2 CODE >188:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+219 text2 CODE >189:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+21A text2 CODE >192:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+21C text2 CODE >193:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+21D text2 CODE >194:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+244 text2 CODE >195:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+245 text1 CODE >103:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+245 text1 CODE >106:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+248 text1 CODE >107:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+249 text1 CODE >108:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+24A text1 CODE >109:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+24B text1 CODE >114:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+24F text1 CODE >115:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+250 text1 CODE >116:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+251 text1 CODE >117:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+252 text1 CODE >119:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+255 text1 CODE >120:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+257 text1 CODE >121:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+25A text1 CODE >122:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+25C text1 CODE >123:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+25D text1 CODE >124:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+25E text1 CODE >135:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+25F text1 CODE >136:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+260 text1 CODE >137:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+261 text1 CODE >138:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+262 text1 CODE >139:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+263 text1 CODE >140:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+267 text1 CODE >144:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+268 text1 CODE >147:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+269 text1 CODE >148:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+26A text1 CODE >149:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+26B text1 CODE >152:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+26E text1 CODE >155:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+26F text1 CODE >156:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+273 text1 CODE >157:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+274 text1 CODE >158:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+275 text1 CODE >161:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+19 maintext CODE >73:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+19 maintext CODE >75:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+1E maintext CODE >77:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+20 maintext CODE >78:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+22 maintext CODE >79:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+22 maintext CODE >81:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+27 maintext CODE >82:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+28 maintext CODE >84:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+2C maintext CODE >85:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+2D maintext CODE >86:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+2E maintext CODE >89:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+32 maintext CODE >90:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+33 maintext CODE >91:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+34 maintext CODE >92:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+46 maintext CODE >93:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+48 maintext CODE >94:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+49 maintext CODE >95:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+59 maintext CODE >96:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+69 maintext CODE >97:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+79 maintext CODE >98:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___latbits 2 0 ABS 0 - dist/default/production\Laboratorio8.X.production.o
+___awdiv@counter 25 0 BANK0 1 cstackBANK0 dist/default/production\Laboratorio8.X.production.o
+__Hspace_0 276 0 ABS 0 - -
+__Hspace_1 7A 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 4010 0 ABS 0 - -
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+__size_of_Display 0 0 ABS 0 - dist/default/production\Laboratorio8.X.production.o
+__Hstrings 0 0 ABS 0 strings -
+_ADIF 66 0 ABS 0 - dist/default/production\Laboratorio8.X.production.o
+_T0IF 5A 0 ABS 0 - dist/default/production\Laboratorio8.X.production.o
+_TMR0 1 0 ABS 0 - dist/default/production\Laboratorio8.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\Z9\AppData\Local\Temp\s4ns.o
+_main 32 0 CODE 0 maintext dist/default/production\Laboratorio8.X.production.o
+btemp 7E 0 ABS 0 - dist/default/production\Laboratorio8.X.production.o
+start 1C 0 CODE 0 init C:\Users\Z9\AppData\Local\Temp\s4ns.o
+__size_of___awdiv 0 0 ABS 0 - dist/default/production\Laboratorio8.X.production.o
+__size_of___awmod 0 0 ABS 0 - dist/default/production\Laboratorio8.X.production.o
+__size_of_main 0 0 ABS 0 - dist/default/production\Laboratorio8.X.production.o
+__HbssCOMMON 0 0 ABS 0 bssCOMMON -
+_OPTION_REGbits 81 0 ABS 0 - dist/default/production\Laboratorio8.X.production.o
+__Hpowerup 0 0 CODE 0 powerup -
+___awmod@sign 26 0 BANK0 1 cstackBANK0 dist/default/production\Laboratorio8.X.production.o
+__LnvCOMMON 0 0 ABS 0 nvCOMMON -
+intlevel0 0 0 ENTRY 0 functab C:\Users\Z9\AppData\Local\Temp\s4ns.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\Z9\AppData\Local\Temp\s4ns.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\Z9\AppData\Local\Temp\s4ns.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\Z9\AppData\Local\Temp\s4ns.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\Z9\AppData\Local\Temp\s4ns.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\Z9\AppData\Local\Temp\s4ns.o
+__LbssCOMMON 0 0 ABS 0 bssCOMMON -
+_OSCCONbits 8F 0 ABS 0 - dist/default/production\Laboratorio8.X.production.o
+wtemp0 7E 0 ABS 0 - dist/default/production\Laboratorio8.X.production.o
+__Hfunctab 0 0 ENTRY 0 functab -
+___awdiv@sign 26 0 BANK0 1 cstackBANK0 dist/default/production\Laboratorio8.X.production.o
+__Hclrtext 0 0 ABS 0 clrtext -
+Display@Numero 20 0 BANK0 1 cstackBANK0 dist/default/production\Laboratorio8.X.production.o
+_ADRESH 1E 0 ABS 0 - dist/default/production\Laboratorio8.X.production.o
+_ANSELH 189 0 ABS 0 - dist/default/production\Laboratorio8.X.production.o
+___awdiv@dividend 22 0 BANK0 1 cstackBANK0 dist/default/production\Laboratorio8.X.production.o
+_Decena 77 0 COMMON 1 nvCOMMON dist/default/production\Laboratorio8.X.production.o
+__end_of_Display 48A 0 CODE 0 text2 dist/default/production\Laboratorio8.X.production.o
+__Lmaintext 0 0 ABS 0 maintext -
+__LnvBANK0 0 0 ABS 0 nvBANK0 -
+___awdiv@divisor 20 0 BANK0 1 cstackBANK0 dist/default/production\Laboratorio8.X.production.o
+__end_of___awdiv 1F0 0 CODE 0 text5 dist/default/production\Laboratorio8.X.production.o
+__end_of___awmod 2A6 0 CODE 0 text4 dist/default/production\Laboratorio8.X.production.o
+_Centena 78 0 COMMON 1 nvCOMMON dist/default/production\Laboratorio8.X.production.o
+___stackhi 0 0 ABS 0 - C:\Users\Z9\AppData\Local\Temp\s4ns.o
+___stacklo 0 0 ABS 0 - C:\Users\Z9\AppData\Local\Temp\s4ns.o
+_Banderas 76 0 COMMON 1 nvCOMMON dist/default/production\Laboratorio8.X.production.o
+__size_of_setup 0 0 ABS 0 - dist/default/production\Laboratorio8.X.production.o
+__HnvCOMMON 0 0 ABS 0 nvCOMMON -
+start_initialization 22 0 CODE 0 cinit dist/default/production\Laboratorio8.X.production.o
+__pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\Laboratorio8.X.production.o
+_Unidad 30 0 BANK0 1 nvBANK0 dist/default/production\Laboratorio8.X.production.o
+___int_sp 0 0 STACK 2 stack C:\Users\Z9\AppData\Local\Temp\s4ns.o
+__Hbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 ABS 0 bank3 -
+__Hcinit 32 0 CODE 0 cinit -
+__Hstack 0 0 STACK 2 stack -
+__Hmaintext 0 0 ABS 0 maintext -
+__Hcommon 0 0 ABS 0 common -
+__Hconfig 4012 0 CONFIG 4 config -
+__Lbank0 0 0 ABS 0 bank0 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Lbank3 0 0 ABS 0 bank3 -
+__Lcinit 22 0 CODE 0 cinit -
+__Lstack 0 0 STACK 2 stack -
+_INTCONbits B 0 ABS 0 - dist/default/production\Laboratorio8.X.production.o
+__Habs1 0 0 ABS 0 abs1 -
+__Hcode 0 0 ABS 0 code -
+__Hinit 1C 0 CODE 0 init -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Htext 0 0 ABS 0 text -
+__Labs1 0 0 ABS 0 abs1 -
+__Lcode 0 0 ABS 0 code -
+__Linit 1C 0 CODE 0 init -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Ltext 0 0 ABS 0 text -
+__pnvBANK0 30 0 BANK0 1 nvBANK0 dist/default/production\Laboratorio8.X.production.o
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__S0 276 0 ABS 0 - -
+__S1 7A 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+_isr 2A6 0 CODE 0 text6 dist/default/production\Laboratorio8.X.production.o
+__pnvCOMMON 75 0 COMMON 1 nvCOMMON dist/default/production\Laboratorio8.X.production.o
+saved_w 7E 0 ABS 0 - dist/default/production\Laboratorio8.X.production.o
+__end_of_isr 358 0 CODE 0 text6 dist/default/production\Laboratorio8.X.production.o
+__HnvBANK0 0 0 ABS 0 nvBANK0 -
+__Lintentry 8 0 CODE 0 intentry -
+__end_of_Decimales 402 0 CODE 0 text3 dist/default/production\Laboratorio8.X.production.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\Z9\AppData\Local\Temp\s4ns.o
+_ADRESH_TEMP1 79 0 COMMON 1 bssCOMMON dist/default/production\Laboratorio8.X.production.o
+_ADRESH_TEMP2 31 0 BANK0 1 bssBANK0 dist/default/production\Laboratorio8.X.production.o
+__size_of_Decimales 0 0 ABS 0 - dist/default/production\Laboratorio8.X.production.o
+__LbssBANK0 0 0 ABS 0 bssBANK0 -
+_Display 402 0 CODE 0 text2 dist/default/production\Laboratorio8.X.production.o
+___awmod@counter 25 0 BANK0 1 cstackBANK0 dist/default/production\Laboratorio8.X.production.o
+_PIE1bits 8C 0 ABS 0 - dist/default/production\Laboratorio8.X.production.o
+___awdiv 11E 0 CODE 0 text5 dist/default/production\Laboratorio8.X.production.o
+___awmod 1F0 0 CODE 0 text4 dist/default/production\Laboratorio8.X.production.o
+_Decimales 358 0 CODE 0 text3 dist/default/production\Laboratorio8.X.production.o
+__pmaintext 32 0 CODE 0 maintext dist/default/production\Laboratorio8.X.production.o
+__Lcommon 0 0 ABS 0 common -
+__Lconfig 0 0 CONFIG 4 config -
+Decimales@Temporal 2C 0 BANK0 1 cstackBANK0 dist/default/production\Laboratorio8.X.production.o
+_ADCON0bits 1F 0 ABS 0 - dist/default/production\Laboratorio8.X.production.o
+_ADCON1bits 9F 0 ABS 0 - dist/default/production\Laboratorio8.X.production.o
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__pbssCOMMON 79 0 COMMON 1 bssCOMMON dist/default/production\Laboratorio8.X.production.o
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+_PIR1bits C 0 ABS 0 - dist/default/production\Laboratorio8.X.production.o
+__Lend_init 1C 0 CODE 0 end_init -
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+end_of_initialization 2A 0 CODE 0 cinit dist/default/production\Laboratorio8.X.production.o
+__Hintentry 1C 0 CODE 0 intentry -
+__Lstrings 0 0 ABS 0 strings -
+___awdiv@quotient 27 0 BANK0 1 cstackBANK0 dist/default/production\Laboratorio8.X.production.o
+?___awdiv 20 0 BANK0 1 cstackBANK0 dist/default/production\Laboratorio8.X.production.o
+?___awmod 20 0 BANK0 1 cstackBANK0 dist/default/production\Laboratorio8.X.production.o
+__Hreset_vec 6 0 CODE 0 reset_vec -
+__HbssBANK0 0 0 ABS 0 bssBANK0 -
+___awmod@dividend 22 0 BANK0 1 cstackBANK0 dist/default/production\Laboratorio8.X.production.o
+__ptext1 48A 0 CODE 0 text1 dist/default/production\Laboratorio8.X.production.o
+__ptext2 402 0 CODE 0 text2 dist/default/production\Laboratorio8.X.production.o
+__ptext3 358 0 CODE 0 text3 dist/default/production\Laboratorio8.X.production.o
+__ptext4 1F0 0 CODE 0 text4 dist/default/production\Laboratorio8.X.production.o
+__ptext5 11E 0 CODE 0 text5 dist/default/production\Laboratorio8.X.production.o
+__ptext6 2A6 0 CODE 0 text6 dist/default/production\Laboratorio8.X.production.o
+__Lpowerup 0 0 CODE 0 powerup -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+__Lreset_vec 0 0 CODE 0 reset_vec -
+__end_of__initialization 2A 0 CODE 0 cinit dist/default/production\Laboratorio8.X.production.o
+___awmod@divisor 20 0 BANK0 1 cstackBANK0 dist/default/production\Laboratorio8.X.production.o
+__Lfunctab 0 0 ENTRY 0 functab -
+__Lclrtext 0 0 ABS 0 clrtext -
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\Laboratorio8.X.production.o
+__Hend_init 22 0 CODE 0 end_init -
+__end_of_main 11E 0 CODE 0 maintext dist/default/production\Laboratorio8.X.production.o
+_ANSEL 188 0 ABS 0 - dist/default/production\Laboratorio8.X.production.o
+_PORTA 5 0 ABS 0 - dist/default/production\Laboratorio8.X.production.o
+_PORTB 6 0 ABS 0 - dist/default/production\Laboratorio8.X.production.o
+_PORTC 7 0 ABS 0 - dist/default/production\Laboratorio8.X.production.o
+_PORTE 9 0 ABS 0 - dist/default/production\Laboratorio8.X.production.o
+_TRISA 85 0 ABS 0 - dist/default/production\Laboratorio8.X.production.o
+_TRISB 86 0 ABS 0 - dist/default/production\Laboratorio8.X.production.o
+_TRISC 87 0 ABS 0 - dist/default/production\Laboratorio8.X.production.o
+_TRISE 89 0 ABS 0 - dist/default/production\Laboratorio8.X.production.o
+__end_of_setup 4EC 0 CODE 0 text1 dist/default/production\Laboratorio8.X.production.o
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+interrupt_function 8 0 CODE 0 intentry dist/default/production\Laboratorio8.X.production.o
+_muxeo 75 0 COMMON 1 nvCOMMON dist/default/production\Laboratorio8.X.production.o
+_setup 48A 0 CODE 0 text1 dist/default/production\Laboratorio8.X.production.o
+__pintentry 8 0 CODE 0 intentry dist/default/production\Laboratorio8.X.production.o
+__size_of_isr 0 0 ABS 0 - dist/default/production\Laboratorio8.X.production.o
+__initialization 22 0 CODE 0 cinit dist/default/production\Laboratorio8.X.production.o
+__pbssBANK0 31 0 BANK0 1 bssBANK0 dist/default/production\Laboratorio8.X.production.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+cstackCOMMON 1 70 70 A 1
+cstackBANK0 1 20 20 12 1
+intentry 0 4 8 272 2
+reset_vec 0 0 0 3 2
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
