@@ -28,7 +28,7 @@ intentry CODE 0 4 4 A 2
 bssBANK0 BANK0 1 31 31 1 1
 bssCOMMON COMMON 1 79 79 1 1
 config CONFIG 4 2007 2007 2 2
-$C:\Users\Z9\AppData\Local\Temp\s4ns.o
+$C:\Users\Z9\AppData\Local\Temp\s4go.o
 reset_vec CODE 0 0 0 3 2
 end_init CODE 0 E E 3 2
 config CONFIG 4 2007 2007 2 2
@@ -78,15 +78,15 @@ STRING 276-1FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\Laboratorio8.X.production.o
-11 cinit CODE >501:C:\Users\Z9\AppData\Local\Temp\s4ns.s
-11 cinit CODE >504:C:\Users\Z9\AppData\Local\Temp\s4ns.s
-11 cinit CODE >521:C:\Users\Z9\AppData\Local\Temp\s4ns.s
-12 cinit CODE >524:C:\Users\Z9\AppData\Local\Temp\s4ns.s
-13 cinit CODE >525:C:\Users\Z9\AppData\Local\Temp\s4ns.s
-14 cinit CODE >526:C:\Users\Z9\AppData\Local\Temp\s4ns.s
-15 cinit CODE >532:C:\Users\Z9\AppData\Local\Temp\s4ns.s
-15 cinit CODE >534:C:\Users\Z9\AppData\Local\Temp\s4ns.s
-16 cinit CODE >535:C:\Users\Z9\AppData\Local\Temp\s4ns.s
+11 cinit CODE >501:C:\Users\Z9\AppData\Local\Temp\s4go.s
+11 cinit CODE >504:C:\Users\Z9\AppData\Local\Temp\s4go.s
+11 cinit CODE >521:C:\Users\Z9\AppData\Local\Temp\s4go.s
+12 cinit CODE >524:C:\Users\Z9\AppData\Local\Temp\s4go.s
+13 cinit CODE >525:C:\Users\Z9\AppData\Local\Temp\s4go.s
+14 cinit CODE >526:C:\Users\Z9\AppData\Local\Temp\s4go.s
+15 cinit CODE >532:C:\Users\Z9\AppData\Local\Temp\s4go.s
+15 cinit CODE >534:C:\Users\Z9\AppData\Local\Temp\s4go.s
+16 cinit CODE >535:C:\Users\Z9\AppData\Local\Temp\s4go.s
 4 intentry CODE >47:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
 153 text6 CODE >47:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
 153 text6 CODE >50:C:\Users\Z9\MPLABXProjects\Laboratorio8.X\Laboratorio8.c
@@ -257,10 +257,10 @@ __Hstrings 0 0 ABS 0 strings -
 _ADIF 66 0 ABS 0 - dist/default/production\Laboratorio8.X.production.o
 _T0IF 5A 0 ABS 0 - dist/default/production\Laboratorio8.X.production.o
 _TMR0 1 0 ABS 0 - dist/default/production\Laboratorio8.X.production.o
-___sp 0 0 STACK 2 stack C:\Users\Z9\AppData\Local\Temp\s4ns.o
+___sp 0 0 STACK 2 stack C:\Users\Z9\AppData\Local\Temp\s4go.o
 _main 32 0 CODE 0 maintext dist/default/production\Laboratorio8.X.production.o
 btemp 7E 0 ABS 0 - dist/default/production\Laboratorio8.X.production.o
-start 1C 0 CODE 0 init C:\Users\Z9\AppData\Local\Temp\s4ns.o
+start 1C 0 CODE 0 init C:\Users\Z9\AppData\Local\Temp\s4go.o
 __size_of___awdiv 0 0 ABS 0 - dist/default/production\Laboratorio8.X.production.o
 __size_of___awmod 0 0 ABS 0 - dist/default/production\Laboratorio8.X.production.o
 __size_of_main 0 0 ABS 0 - dist/default/production\Laboratorio8.X.production.o
@@ -269,12 +269,12 @@ _OPTION_REGbits 81 0 ABS 0 - dist/default/production\Laboratorio8.X.production.o
 __Hpowerup 0 0 CODE 0 powerup -
 ___awmod@sign 26 0 BANK0 1 cstackBANK0 dist/default/production\Laboratorio8.X.production.o
 __LnvCOMMON 0 0 ABS 0 nvCOMMON -
-intlevel0 0 0 ENTRY 0 functab C:\Users\Z9\AppData\Local\Temp\s4ns.o
-intlevel1 0 0 ENTRY 0 functab C:\Users\Z9\AppData\Local\Temp\s4ns.o
-intlevel2 0 0 ENTRY 0 functab C:\Users\Z9\AppData\Local\Temp\s4ns.o
-intlevel3 0 0 ENTRY 0 functab C:\Users\Z9\AppData\Local\Temp\s4ns.o
-intlevel4 0 0 ENTRY 0 functab C:\Users\Z9\AppData\Local\Temp\s4ns.o
-intlevel5 0 0 ENTRY 0 functab C:\Users\Z9\AppData\Local\Temp\s4ns.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\Z9\AppData\Local\Temp\s4go.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\Z9\AppData\Local\Temp\s4go.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\Z9\AppData\Local\Temp\s4go.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\Z9\AppData\Local\Temp\s4go.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\Z9\AppData\Local\Temp\s4go.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\Z9\AppData\Local\Temp\s4go.o
 __LbssCOMMON 0 0 ABS 0 bssCOMMON -
 _OSCCONbits 8F 0 ABS 0 - dist/default/production\Laboratorio8.X.production.o
 wtemp0 7E 0 ABS 0 - dist/default/production\Laboratorio8.X.production.o
@@ -293,15 +293,15 @@ ___awdiv@divisor 20 0 BANK0 1 cstackBANK0 dist/default/production\Laboratorio8.X
 __end_of___awdiv 1F0 0 CODE 0 text5 dist/default/production\Laboratorio8.X.production.o
 __end_of___awmod 2A6 0 CODE 0 text4 dist/default/production\Laboratorio8.X.production.o
 _Centena 78 0 COMMON 1 nvCOMMON dist/default/production\Laboratorio8.X.production.o
-___stackhi 0 0 ABS 0 - C:\Users\Z9\AppData\Local\Temp\s4ns.o
-___stacklo 0 0 ABS 0 - C:\Users\Z9\AppData\Local\Temp\s4ns.o
+___stackhi 0 0 ABS 0 - C:\Users\Z9\AppData\Local\Temp\s4go.o
+___stacklo 0 0 ABS 0 - C:\Users\Z9\AppData\Local\Temp\s4go.o
 _Banderas 76 0 COMMON 1 nvCOMMON dist/default/production\Laboratorio8.X.production.o
 __size_of_setup 0 0 ABS 0 - dist/default/production\Laboratorio8.X.production.o
 __HnvCOMMON 0 0 ABS 0 nvCOMMON -
 start_initialization 22 0 CODE 0 cinit dist/default/production\Laboratorio8.X.production.o
 __pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\Laboratorio8.X.production.o
 _Unidad 30 0 BANK0 1 nvBANK0 dist/default/production\Laboratorio8.X.production.o
-___int_sp 0 0 STACK 2 stack C:\Users\Z9\AppData\Local\Temp\s4ns.o
+___int_sp 0 0 STACK 2 stack C:\Users\Z9\AppData\Local\Temp\s4go.o
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Hbank2 0 0 ABS 0 bank2 -
@@ -348,7 +348,7 @@ __end_of_isr 358 0 CODE 0 text6 dist/default/production\Laboratorio8.X.productio
 __HnvBANK0 0 0 ABS 0 nvBANK0 -
 __Lintentry 8 0 CODE 0 intentry -
 __end_of_Decimales 402 0 CODE 0 text3 dist/default/production\Laboratorio8.X.production.o
-reset_vec 0 0 CODE 0 reset_vec C:\Users\Z9\AppData\Local\Temp\s4ns.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\Z9\AppData\Local\Temp\s4go.o
 _ADRESH_TEMP1 79 0 COMMON 1 bssCOMMON dist/default/production\Laboratorio8.X.production.o
 _ADRESH_TEMP2 31 0 BANK0 1 bssBANK0 dist/default/production\Laboratorio8.X.production.o
 __size_of_Decimales 0 0 ABS 0 - dist/default/production\Laboratorio8.X.production.o

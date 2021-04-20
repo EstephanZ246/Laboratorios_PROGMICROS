@@ -34,8 +34,8 @@ uint8_t Centena;
 uint8_t Decena;
 uint8_t Unidad;
 uint8_t Banderas;
-uint8_t ADRESH_TEMP1; 
-uint8_t ADRESH_TEMP2;
+uint8_t ADRESH_TEMP1; // canal 12
+uint8_t ADRESH_TEMP2; // canal 10
 uint8_t muxeo;
 
 // PROTOTIPO DE FUNCIONES
@@ -81,12 +81,12 @@ while(1)// LOOP PRINCIPAL
     Decimales();
     switch(Banderas){
         case(1):
-            ADCON0bits.CHS = 0x0C;//Selecionamos canal 12 (PRIMER POTENCIOMETRO)
+            ADCON0bits.CHS = 0x0C;//Seleccionamos canal 12 (PRIMER POTENCIOMETRO)
             ADCON0bits.GO_DONE = 1;
             break;
             
         case(2):
-            ADCON0bits.CHS = 0x0A;//Selecionamos canal 12 (PRIMER POTENCIOMETRO)
+            ADCON0bits.CHS = 0x0A;//Seleccionamos canal 10 (SEGUNDO POTENCIOMETRO)
             ADCON0bits.GO_DONE = 1;
             break;
     }

@@ -180,7 +180,7 @@ cstackCOMMON 70 79 COMMON 70 1
 cstackBANK0 20 31 BANK0 20 1
 %locals
 dist/default/production\Laboratorio8.X.production.o
-C:\Users\Z9\AppData\Local\Temp\s4ns.s
+C:\Users\Z9\AppData\Local\Temp\s4go.s
 501 11 0 CODE 0
 504 11 0 CODE 0
 521 11 0 CODE 0
